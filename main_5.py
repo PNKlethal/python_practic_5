@@ -6,7 +6,6 @@ def summary():
             line = input('Введите цифры через пробел: ')
             file_obj.writelines(line)
             my_numb = line.split()
-
             print(sum(map(int, my_numb)))
     except IOError:
         print('Ошибка в файле')
